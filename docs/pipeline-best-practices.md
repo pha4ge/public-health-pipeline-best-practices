@@ -2,7 +2,8 @@
 
 **PHA4GE Bioinformatics Pipelines &amp; Visualization Working Group <br/>**
 Libuit KG, Guthrie J, Ambrosio F, Kapsak C, Unal Gultekin, Holmes J, Wright S, Nguinkal J, Doughty E, Southgate J, O'Cathail C, Carleton H, Kingwara L, Khan W, Baker K, Diallo A, Connor T, Kanwar S, Maturure P, James S, Cuesta I, Dyster V, Gaskin A, Williams C, Smith E, Rokney A, Petkau A, Varona S, Gnimpieba E, Rey S, Macori G, & Mboowa G
-<details>
+
+_Updates and modifications to this documented are captured in the repository [changelog](/CHANGELOG.md)._
 
 ## Overview
 
