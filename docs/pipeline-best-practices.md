@@ -1,4 +1,4 @@
-# **Best Practices for Public Health Bioinformatics Pipelines**
+# **Ten Best Practices for Public Health Bioinformatics Pipelines**
 
 **PHA4GE Bioinformatics Pipelines &amp; Visualization Working Group <br/>**
 Libuit KG, Guthrie J, Ambrosio F, Kapsak C, Unal Gultekin, Holmes J, Wright S, Nguinkal J, Doughty E, Southgate J, O'Cathail C, Carleton H, Kingwara L, Khan W, Baker K, Diallo A, Connor T, Kanwar S, Maturure P, James S, Cuesta I, Dyster V, Gaskin A, Williams C, Smith E, Rokney A, Petkau A, Varona S, Gnimpieba E, Rey S, Macori G, & Mboowa G
@@ -7,7 +7,7 @@ _Updates and modifications to this documented are captured in the repository [ch
 
 ## Overview
 
-The field of public health bioinformatics relies heavily on the development and sustainability of high-quality software to support efforts in disease surveillance, outbreak investigation, and genomic research. Bioinformatics pipelines, also known as bioinformatics workflows, play a critical role in facilitating the routine analysis of genomic data by orchestrating the flow from raw data through various processing stages to final analysis. 
+The field of public health bioinformatics relies heavily on the development and sustainability of high-quality software to support efforts in disease surveillance, outbreak investigation, and genomic research. Bioinformatics pipelines, also known as bioinformatics workflows, play a critical role in facilitating the routine analysis of genomic data by orchestrating the flow from raw data through various processing stages to final analysis and reporting. 
 
 Despite their critical role, the absence of guidelines and best practices specific to public health pathogen genomics has hindered progress towards accessible, reproducible, interoperable, and standardized bioinformatics analysis in public health.
 
@@ -18,7 +18,7 @@ To support both pipeline developers and analysts who rely on these pipelines to 
 ### 1. Publicly-Accessible Repository
 _Is the source code for this pipeline available at a publicly-accessible repository URL?_
 
-Publicly-accessible software bolsters collaboration and expedites innovation in public health bioinformatics, empowering worldwide public health communities to address critical challenges. By enhancing accessibility, publicly available software enable interoperability and reproducibility across public health investigations, crucial for well-informed decision-making and policy creation. Popular code repositories such as GitHub, GitLab, Bitbucket, and SourceForge offer platforms for developers to share their work. 
+Publicly-accessible software bolsters collaboration and expedites innovation in public health bioinformatics, empowering worldwide public health communities to address critical challenges. By enhancing accessibility, publicly available software enables interoperability and reproducibility across public health investigations, crucial for well-informed decision-making and policy creation. Popular code repositories such as GitHub, GitLab, Bitbucket, and SourceForge offer platforms for developers to share their work. 
 
 **To adhere to this best practice:** Host the bioinformatics pipeline on an open code repository platform.
 
@@ -47,7 +47,7 @@ _Does the pipeline utilize a workflow management system for its development and 
 
 Implementing workflow management systems in public health bioinformatics pipelines ensures efficient, scalable, and reproducible analyses. These systems automate complex data processing tasks, facilitating seamless integration and execution of diverse bioinformatics tools. By standardizing workflow execution, they enhance data analysis consistency across different computational environments, contributing significantly to the reliability and reproducibility of public health research findings.
 
-Additionally, the use of workflow management systems facilitates maintainability. The shared knowledge and use of these systems by a community of developers ensure that pipelines can be more readily supported and updated, significantly enhancing long-term usability and stability. Common workflow management systems adopted acorss public health pathogen genomics include [NextFlow](https://www.nextflow.io/), [WDL](https://openwdl.org/), [SnakeMake](https://snakemake.readthedocs.io/en/stable/), and [CWL](https://www.commonwl.org/). 
+Additionally, the use of workflow management systems facilitates maintainability. The shared knowledge and use of these systems by a community of developers ensure that pipelines can be more readily supported and updated, significantly enhancing long-term usability and stability. Common workflow management systems adopted across public health pathogen genomics include [NextFlow](https://www.nextflow.io/), [WDL](https://openwdl.org/), [SnakeMake](https://snakemake.readthedocs.io/en/stable/), and [CWL](https://www.commonwl.org/). 
 
 **To adhere to this best practice:** Choose a workflow management system that supports scalability, is compatible with common bioinformatics tools, and integrates easily with existing infrastructure. Document the workflow configuration and dependencies clearly.
 
@@ -58,17 +58,17 @@ _Does the pipeline utilize containerized (e.g. Docker) or packaging (e.g. conda)
 
 Using software packages and/or containerization within public health bioinformatics pipeline enhances interoperability by enabling seamless integration and deployment across different platforms and environments. This approach simplifies pipeline distribution and installation, promotes reproducibility, and facilitates collaboration among researchers, contributing to the development of more accessible and interoperable tools and resources.
 
-Containers are essential for modern bioinformatics development and pipeline distribution, as the ability to replicate results is a fundamental principle of the scientific method. This is true for public health, as any lab should be able to easily install and maintain pipeline and reproduce/verify results from another lab. Containers should be packaged with one or a combination of the following methods:
+Containers are essential for modern bioinformatics development and pipeline distribution, as the ability to replicate results is a fundamental principle of the scientific method. This is also true for public health, as any laboratory should be able to easily install and maintain pipelines, and reproduce and verify pipeline results from another laboratory. Containers should be packaged with one or a combination of the following methods:
 - conda environments
 - venv environments
 - Singularity containers
 - Docker containers.
 
-There should be a clear summary in the Git README pointing to which containerisation method has been chosen and instructions for how a lab can install this pipeline and/or where docker images are available, e.g. dockerhub and quay for containers; and where conda packages are available, e.g. anaconda and bioconda (cross-referenced with Installation Instructions). Documentation should indicate the specific version included in the pipeline. This is important as specific software versions  may impact functionality.
+There should be a clear summary in the source code repository (e.g. Git README.md) pointing to which containerization method has been chosen and instructions for how a laboratory can install this pipeline and/or where Docker images are available, e.g. dockerhub and quay for containers; and where conda packages are available, e.g. anaconda and bioconda (cross-referenced with Installation Instructions). Documentation should indicate the specific version included in the pipeline. This is important as specific software versions may impact functionality.
 
-**To adhear this best practice:** Implement pipeline components within Docker containers or distribute them as Conda packages; use of containerized/packaged software should be clearly documented.
+**To adhere this best practice:** Implement pipeline components within sofftware containers or distribute them as Conda packages. Use of containerized/packaged software should be clearly documented.
 
-**To verify adherence to this best practice:** The reviewer should inspect the pipeline source code and review analyatical steps (e.g. NextFLow processes or WDL tasks) to ensure use of containerized or packaged softare and verify documentation of these resources.
+**To verify adherence to this best practice:** The reviewer should inspect the pipeline source code and review analyatical steps (e.g. NextFlow processes or WDL tasks) to ensure use of containerized or packaged software and verify documentation of these resources.
 
 ### 6. Common File Formats
 _Does the pipeline accept as input and generate as output common file format utilized in public health pathogen genomics?_
@@ -82,7 +82,7 @@ Accepting and generating common file formats for public health bioinformatics pi
 ### 7. Software Testing
 _Are there automated and/or manual tests described so that the functionality of the pipeline can be assessed?_
 
-Including software tests for public health bioinformatics pipeline ensures the reliability and accuracy of the tools, enhancing user confidence and promoting consistent research outcomes. These tests also facilitate early detection and resolution of potential issues, contributing to the overall stability and robustness of the pipeline in a rapidly evolving public health landscape. At a minimum, pipeline being implemented for public health pathogen genomics should include: 
+Including software tests for public health bioinformatics pipeline ensures the reliability and accuracy of the tools, enhancing user confidence and promoting consistent research outcomes. These tests also facilitate early detection and resolution of potential issues, contributing to the overall stability and robustness of the pipeline in a rapidly evolving public health landscape. At a minimum, pipelines being implemented for public health pathogen genomics should include: 
 - Smoke tests to ensure that the basic functionality of the program is working correctly
 - Unit tests to test individual code units
 - System tests/end-to-end tests to assess the overall functionality of the program, with a focus on common and important paths
@@ -227,7 +227,7 @@ If the resources have been made available via a web application (e.g. Galaxy or 
 #### 10h. Example Usage
 _Do the authors include examples of how to use this pipeline?_
 
-Documenting an example usage for public health bioinformatics pipeline provides researchers with practical guidance on how to effectively apply the tool in real-world scenarios, enhancing their understanding of its potential applications. This practice promotes successful integration of the pipeline into research workflows, ensuring that it is utilized to its full capacity and ultimately advancing public health outcomes. An example usage for a command-line interface (CLI) tool in public health bioinformatics might illustrate the required input data, command syntax, and expected output, providing a tangible demonstration of the tool's application. For instance, a tool analyzing genomic variants could have an example usage like:
+Documenting an example usage for public health bioinformatics pipeline provides researchers with practical guidance on how to effectively apply the tool in real-world scenarios, enhancing their understanding of its potential applications. This practice promotes successful integration of the pipeline into research platforms, ensuring that it is utilized to its full capacity and ultimately advancing public health outcomes. An example usage for a command-line interface (CLI) tool in public health bioinformatics might illustrate the required input data, command syntax, and expected output, providing a tangible demonstration of the tool's application. For instance, a tool analyzing genomic variants could have an example usage like:
 
 ```
 Input files:
