@@ -54,7 +54,7 @@ Additionally, the use of workflow management systems facilitates maintainability
 **To verify adherence to this best practice:** The reviwer should assess the pipeline source code to identify the use of a workflow management system.
 
 ### 5. Containerized/Packaged Software
-_Does the pipeline utilize containerized (e.g. Docker) or software packaging (e.g. conda) to enhance interoperable pipeline distribution?_ 
+_Does the pipeline utilize containerized software (e.g. Docker) or packaging (e.g. conda) to enhance interoperable pipeline distribution?_ 
 
 Using software packages and/or containerization within public health bioinformatics pipeline enhances interoperability by enabling seamless integration and deployment across different platforms and environments. This approach simplifies pipeline distribution and installation, promotes reproducibility, and facilitates collaboration among researchers, contributing to the development of more accessible and interoperable tools and resources.
 
