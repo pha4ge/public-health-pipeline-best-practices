@@ -33,7 +33,7 @@ Open-source licenses in public health bioinformatics encourage the widespread ad
 
 **To verify adherence to this best practice:** The reviewer should confirm the presence of a clearly defined open-source license in the pipeline repository.
 
-### 3. Version Controlled Software 
+### 3. Semantic Versioning of Stable Releases
 _Are stable releases that follow semantic versioning of the pipeline available for implementation in public health laboratories?_
 
 Utilizing stable software releases with semantic versioning in public health bioinformatics ensures consistent functionality and compatibility, minimizing disruptions in research workflows. This approach also simplifies version tracking and communication, facilitating seamless collaboration among researchers and reducing the likelihood of errors due to software discrepancies. Maintaining a detailed changelog is also highly recommended to track software updates, bug fixes, and feature additions, ensuring transparency and ease of understanding for users.
